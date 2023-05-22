@@ -1,9 +1,10 @@
+import { resultInterface } from "@/interfaces/resultInterface";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FiThumbsUp } from "react-icons/fi";
 
-export default function Card({ result }: any) {
+export default function Card({ result }: { result: resultInterface }) {
   return (
     <div
       className="cursor-pointer sm:p-3 sm:hover:shadow-slate-400 
